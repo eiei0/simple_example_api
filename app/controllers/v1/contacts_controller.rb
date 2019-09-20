@@ -6,6 +6,10 @@ module V1
       render locals: { contact: contact }
     end
 
+    def show
+      render locals: { contact: contact }
+    end
+
     private
 
     def contact
