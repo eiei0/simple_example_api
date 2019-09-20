@@ -6,6 +6,12 @@ module V1
       render locals: { contact: contact }
     end
 
+    def update
+      contact.update!(contact_params)
+
+      render locals: { contact: contact }
+    end
+
     def show
       render locals: { contact: contact }
     end
