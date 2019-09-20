@@ -16,6 +16,12 @@ module V1
       render locals: { contact: contact }
     end
 
+    def index
+      contacts = Contact.all
+
+      render locals: { contacts: contacts }
+    end
+
     private
 
     def contact
