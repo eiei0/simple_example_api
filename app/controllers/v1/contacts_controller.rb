@@ -22,6 +22,12 @@ module V1
       render locals: { contacts: contacts }
     end
 
+    def destroy
+      contact.destroy!
+
+      head :no_content
+    end
+
     private
 
     def contact
